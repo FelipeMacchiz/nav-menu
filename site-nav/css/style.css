@@ -17,7 +17,7 @@ header {
     position: relative;
     width: 100%;
     height: min-content;
-    padding: 20px 0;
+    padding: 0;
     margin-bottom: 30px;
     background-color: tomato;
 }
@@ -37,11 +37,12 @@ header {
     align-items: center;
     align-content: center;
     width: 90px;
-    height: 30px;
+    height: 60px;
     background-color: orangered;
 }
 .menu-static li a {
     display: flex;
+    margin: auto;
     color: whitesmoke;
     text-decoration: orangered;
     font-weight: bolder;
