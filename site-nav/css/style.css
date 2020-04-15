@@ -42,7 +42,8 @@ header {
 }
 .menu-static li a {
     display: flex;
-    margin: auto;
+    padding: 19px;
+    text-align: center;
     color: whitesmoke;
     text-decoration: orangered;
     font-weight: bolder;
