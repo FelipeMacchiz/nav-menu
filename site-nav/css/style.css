@@ -31,7 +31,7 @@ body {
     display: inline-flex;
     position: absolute;
     width: fit-content;
-    right: 0;
+    right: 2px;
 }
 .menu-static ul {
     padding: 0;
