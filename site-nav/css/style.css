@@ -136,10 +136,12 @@ section {
 }
 .text p {
     margin: 10px 0;
+    line-height: 25px;
 }
 img {
     display: inline-block;
     margin: 10px 15px;
-    float: right;
 }
+#raposa img {float: right}
+#elefante img {float: left}
 
