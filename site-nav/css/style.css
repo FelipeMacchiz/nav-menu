@@ -122,9 +122,16 @@ body {
         background-color: #164094;
     }
 
-section {margin-top: -4px}
 .banner {
+    position: relative;
     background: url("../imagens/banner.jpg");
     color: #eeeeee;
     height: 200px;
+    margin-top: -4px;
+}
+.banner .title {
+    position:absolute;
+    text-align: right;
+    bottom: 0;
+    right: 10px;
 }
