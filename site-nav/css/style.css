@@ -122,26 +122,3 @@ body {
         background-color: #b52518;
     }
 
-/* Section */
-section {
-    display: block;
-    position: relative;
-    margin: 10px 20px 20px 20px;
-    align-content: center;
-    overflow: auto;
-}
-.text {
-    display: block;
-    text-align: justify;
-}
-.text p {
-    margin: 10px 0;
-    line-height: 25px;
-}
-img {
-    display: inline-block;
-    margin: 10px 15px;
-}
-#raposa img {float: right}
-#elefante img {float: left}
-
