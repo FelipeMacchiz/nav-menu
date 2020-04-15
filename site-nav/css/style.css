@@ -101,6 +101,7 @@ body {
         left: -3px;
         width: 201px;
         background-color: #eeeeee;
+        z-index: 1;
     }
     .drop-content a {
         display: block;
