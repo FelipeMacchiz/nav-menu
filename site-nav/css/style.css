@@ -29,7 +29,7 @@ body {
 
     align-items: center;
 
-    background-color: #d43122;
+    background-color: #1e57c9;
 }
 .menu-static .icon {
     font-size: 25px;
@@ -84,7 +84,7 @@ body {
 .menu-static .menu-itens:hover {
     transform: scale(1.03);
     transition: 0.1s;
-    background-color: #b52518;
+    background-color: #164094;
 }
 
     /* Menu Dropdown */
@@ -119,6 +119,12 @@ body {
     .drop-menu:hover #drop-button {
         transform: scale(1.03);
         transition: 0.1s;
-        background-color: #b52518;
+        background-color: #164094;
     }
 
+section {margin-top: -4px}
+.banner {
+    background: url("../imagens/banner.jpg");
+    color: #eeeeee;
+    height: 200px;
+}
