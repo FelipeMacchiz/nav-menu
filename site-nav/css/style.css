@@ -16,14 +16,17 @@ body {
     display: inline-flex;
     position: relative;
     width: 100%;
-    height: min-content;
+    min-height: 60px;
+    max-height: min-content;
     padding: 0;
     margin-bottom: 30px;
     background-color: tomato;
 }
 .menu-static nav {
+    position: absolute;
     display: inline-flex;
     width: max-content;
+    right: 0;
 }
 .menu-static ul {
     padding: 0;
