@@ -15,12 +15,17 @@ body {
 .menu-static {
     display: inline-flex;
     position: relative;
+
     width: 100%;
     min-height: 60px;
     max-height: min-content;
+
     padding: 0;
     margin-bottom: 30px;
-    background-color: tomato;
+
+    align-items: center;
+
+    background-color: #d6431a;
 }
 .menu-static nav {
     display: inline-flex;
@@ -34,19 +39,20 @@ body {
     margin: 0;
 }
 .menu-static li {
-    display: inline-flex;
+    display: inline-block;
     list-style: none;
     text-transform: uppercase;
     align-items: center;
     width: fit-content;
     height: 60px;
-    border: 0;
-    background-color: orangered;
+    border-right: 1px rgba(255, 255, 255, 0.1) solid;
+    border-left: 1px rgba(255, 255, 255, 0.1) solid;
+    margin: 0 -3px;
 }
 .menu-static li a {
     display: inline-flex;
     width: fit-content;
-    padding: 20px 20px;
+    padding: 20px;
     vertical-align: center;
     color: whitesmoke;
     text-decoration: orangered;
