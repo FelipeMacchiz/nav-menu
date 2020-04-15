@@ -24,11 +24,11 @@ body {
     max-height: min-content;
 
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 
     align-items: center;
 
-    background-color: #d6431a;
+    background-color: #d43122;
 }
 .menu-static .icon {
     font-size: 25px;
@@ -83,7 +83,7 @@ body {
 .menu-static .menu-itens:hover {
     transform: scale(1.03);
     transition: 0.1s;
-    background-color: #a83616;
+    background-color: #b52518;
 }
 
     /* Menu Dropdown */
@@ -117,5 +117,21 @@ body {
     .drop-menu:hover #drop-button {
         transform: scale(1.03);
         transition: 0.1s;
-        background-color: #a83616;
+        background-color: #b52518;
     }
+
+/* Section */
+section {
+    position: relative;
+    margin: 10px 20px;
+}
+section p {
+    display: inline-block;
+    width: 445px;
+    margin: 10px;
+    text-align: justify;
+}
+#raposa img {
+    display: inline-block;
+    float: right;
+}
