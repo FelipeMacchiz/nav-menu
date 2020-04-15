@@ -23,8 +23,8 @@ body {
     background-color: tomato;
 }
 .menu-static nav {
-    position: absolute;
     display: inline-flex;
+    position: absolute;
     width: max-content;
     right: 0;
 }
@@ -38,15 +38,21 @@ body {
     list-style: none;
     text-transform: uppercase;
     align-items: center;
-    width: 90px;
+    width: fit-content;
     height: 60px;
     background-color: orangered;
 }
 .menu-static li a {
-    display: flex;
-    padding: 19px;
+    display: inline-flex;
+    width: fit-content;
+    padding: 20px 20px;
+    vertical-align: center;
     color: whitesmoke;
     text-decoration: orangered;
     font-weight: bolder;
+}
+.menu-static li a:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
 }
 
