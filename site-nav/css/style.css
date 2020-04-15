@@ -27,41 +27,51 @@ body {
 
     background-color: #d6431a;
 }
-.menu-static span {
+.menu-static .icon {
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: bold;
+    display: block;
     position: absolute;
-    left: 30px;
     margin: 0;
     border: 0;
+}
+.menu-static #logo {
+    left: 30px;
+}
+.menu-static #login {
+    right: 30px;
+}
+.menu-static #login:hover {
+    color: #ffffff;
 }
 .menu-static nav {
     display: inline-flex;
     position: absolute;
     width: fit-content;
-    right: 2px;
+    right: 100px;
 }
 .menu-static ul {
     padding: 0;
     border: 0;
     margin: 0;
+    list-style: none;
 }
 .menu-static li {
     display: inline-block;
-    list-style: none;
     text-transform: uppercase;
     align-items: center;
     width: fit-content;
     height: 60px;
-    border-right: 1px rgba(255, 255, 255, 0.1) solid;
-    border-left: 1px rgba(255, 255, 255, 0.1) solid;
     margin: 0 -3px;
 }
 .menu-static li a {
-    display: inline-flex;
-    width: fit-content;
+    display: block;
     padding: 20px;
-    vertical-align: center;
+    text-align: center;
+    width: fit-content;
     color: whitesmoke;
-    text-decoration: orangered;
+    text-decoration: none;
     font-weight: bolder;
 }
 .menu-static li a:hover {
