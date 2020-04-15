@@ -27,6 +27,12 @@ body {
 
     background-color: #d6431a;
 }
+.menu-static span {
+    position: absolute;
+    left: 30px;
+    margin: 0;
+    border: 0;
+}
 .menu-static nav {
     display: inline-flex;
     position: absolute;
@@ -61,6 +67,5 @@ body {
 .menu-static li a:hover {
     transform: scale(1.03);
     transition: 0.1s;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #a83616;
 }
-
