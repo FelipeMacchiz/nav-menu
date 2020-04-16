@@ -14,23 +14,7 @@ body {
     font-family: sans-serif;
     background-color: whitesmoke;
 }
-
-/* Menu estático do site 1 */
-.menu-static {
-    display: inline-flex;
-    position: relative;
-
-    width: 100%;
-    min-height: 60px;
-    max-height: min-content;
-
-    padding: 0;
-    margin-bottom: 0;
-
-    align-items: center;
-
-    background-color: #1e57c9;
-}
+/* Icons */
 .menu-static .icon {
     font-size: 25px;
     color: whitesmoke;
@@ -50,6 +34,22 @@ body {
     transition: 0.1s;
     font-size: 27px;
     color: #ffffff;
+}
+/* Menu estático do site 1 */
+.menu-static {
+    display: inline-flex;
+    position: relative;
+
+    width: 100%;
+    min-height: 60px;
+    max-height: min-content;
+
+    padding: 0;
+    margin-bottom: 0;
+
+    align-items: center;
+
+    background-color: #1e57c9;
 }
 .menu-static nav {
     display: inline-flex;
@@ -86,16 +86,15 @@ body {
     transition: 0.1s;
     background-color: #164094;
 }
-
-    /* Menu Dropdown */
-    .drop-menu {
+/* Menu Dropdown */
+.drop-menu {
         position: relative;
         display: inline-block;
     }
-    #drop-button {
+#drop-button {
         cursor: pointer;
     }
-    .drop-content {
+.drop-content {
         display: none;
         position: absolute;
         top: 60px;
@@ -104,24 +103,24 @@ body {
         background-color: #eeeeee;
         z-index: 1;
     }
-    .drop-content a {
+.drop-content a {
         display: block;
         color: #222222;
         padding: 12px 16px;
         text-decoration: none;
     }
-    .drop-menu:hover .drop-content {
+.drop-menu:hover .drop-content {
         display: block;
     }
-    .drop-content a:hover {
+.drop-content a:hover {
         background-color: #aaaaaa;
     }
-    .drop-menu:hover #drop-button {
+.drop-menu:hover #drop-button {
         transform: scale(1.03);
         transition: 0.1s;
         background-color: #164094;
     }
-
+/* Banner */
 .banner {
     position: relative;
     background: url("../imagens/banner.jpg");
