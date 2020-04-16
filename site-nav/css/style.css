@@ -25,12 +25,15 @@ body {
     border: 0;
 }
 .menu-static #logo {
+    position: absolute;
     left: 30px;
+    top: 10px;
 }
-.menu-static #login {
+.login #login {
     right: 30px;
+    cursor: pointer;
 }
-.menu-static #login:hover {
+.login #login:hover {
     transition: 0.1s;
     font-size: 27px;
     color: #ffffff;
@@ -120,13 +123,62 @@ body {
         transition: 0.1s;
         background-color: #164094;
     }
+/* Login Dropdown */
+.login #login:hover .login-content {
+    display: block;
+    z-index: 1;
+}
+.login {
+    position: relative;
+    display: inline-block;
+}
+.login-content {
+    position: absolute;
+    display: none;
+    top: 60px;
+    right: 0;
+    width: 250px;
+    height: 300px;
+    background-color: #eeeeee;
+    border: 1px #aaaaaa solid;
+    z-index: 1;
+}
+.login-content h2 {
+    margin: 5px 10px;
+    color: #222222;
+    font-size: 18pt;
+}
+.login-content input {
+    margin: 5px 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 13pt;
+}
+.login-content p {
+    margin: 5px 15px;
+    font-size: 11pt;
+    color: #1e57c9;
+    cursor: pointer;
+}
+.login-content p:hover {
+    color: #164094;
+}
+.login-content input[type="button"] {
+    background-color: orange;
+    border-radius: 10px;
+    width: 220px;
+}
+.login-content input[type="button"]:hover {
+    cursor: pointer;
+    background-color: darkorange;
+}
 /* Banner */
 .banner {
     position: relative;
     background: url("../imagens/banner.jpg");
     color: #eeeeee;
     height: 200px;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 .banner .title {
     position:absolute;
