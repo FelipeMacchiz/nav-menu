@@ -14,30 +14,6 @@ body {
     font-family: sans-serif;
     background-color: whitesmoke;
 }
-/* Icons */
-.menu-static .icon {
-    font-size: 25px;
-    color: whitesmoke;
-    font-weight: bold;
-    display: block;
-    position: absolute;
-    margin: 0;
-    border: 0;
-}
-.menu-static #logo {
-    position: absolute;
-    left: 30px;
-    top: 10px;
-}
-.login #login {
-    right: 30px;
-    cursor: pointer;
-}
-.login #login:hover {
-    transition: 0.1s;
-    font-size: 27px;
-    color: #ffffff;
-}
 /* Menu estático do site 1 */
 .menu-static {
     display: inline-flex;
@@ -53,6 +29,29 @@ body {
     align-items: center;
 
     background-color: #1e57c9;
+}
+.menu-static .icon {
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin: 0;
+    border: 0;
+}
+.menu-static #logo {
+    position: absolute;
+    left: 30px;
+    margin: auto;
+}
+.menu-static #login {
+    right: 30px;
+    cursor: pointer;
+}
+.menu-static #login:hover {
+    transition: 0.1s;
+    font-size: 27px;
+    color: #ffffff;
 }
 .menu-static nav {
     display: inline-flex;
@@ -98,79 +97,30 @@ body {
         cursor: pointer;
     }
 .drop-content {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: -3px;
-        width: 201px;
-        background-color: #eeeeee;
-        z-index: 1;
-    }
-.drop-content a {
-        display: block;
-        color: #222222;
-        padding: 12px 16px;
-        text-decoration: none;
-    }
-.drop-menu:hover .drop-content {
-        display: block;
-    }
-.drop-content a:hover {
-        background-color: #aaaaaa;
-    }
-.drop-menu:hover #drop-button {
-        transform: scale(1.03);
-        transition: 0.1s;
-        background-color: #164094;
-    }
-/* Login Dropdown */
-.login #login:hover .login-content {
-    display: block;
-    z-index: 1;
-}
-.login {
-    position: relative;
-    display: inline-block;
-}
-.login-content {
-    position: absolute;
     display: none;
-    top: 60px;
-    right: 0;
-    width: 250px;
-    height: 300px;
+    position: absolute;
+    top: 59px;
+    left: -2px;
+    width: 201px;
     background-color: #eeeeee;
-    border: 1px #aaaaaa solid;
     z-index: 1;
 }
-.login-content h2 {
-    margin: 5px 10px;
+.drop-content a {
+    display: block;
     color: #222222;
-    font-size: 18pt;
+    padding: 12px 16px;
+    text-decoration: none;
 }
-.login-content input {
-    margin: 5px 10px;
-    padding: 10px;
-    width: 200px;
-    font-size: 13pt;
+.drop-menu:hover .drop-content {
+    display: block;
 }
-.login-content p {
-    margin: 5px 15px;
-    font-size: 11pt;
-    color: #1e57c9;
-    cursor: pointer;
+.drop-content a:hover {
+    background-color: #aaaaaa;
 }
-.login-content p:hover {
-    color: #164094;
-}
-.login-content input[type="button"] {
-    background-color: orange;
-    border-radius: 10px;
-    width: 220px;
-}
-.login-content input[type="button"]:hover {
-    cursor: pointer;
-    background-color: darkorange;
+.drop-menu:hover #drop-button {
+    transform: scale(1.03);
+    transition: 0.1s;
+    background-color: #164094;
 }
 /* Banner */
 .banner {
