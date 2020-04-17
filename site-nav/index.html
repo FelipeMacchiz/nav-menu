@@ -26,6 +26,27 @@
         </nav>
         <span class="icon" id="login"><i class="fas fa-user"></i></span>
 
+        <!-- Area de login --><!-- NÃO FUNCIONA... AINDA --
+        <div class="login">
+            <div class="login-content">
+                <h2>Login</h2>
+                <form>
+                    <label>
+                        <input type="text" placeholder="Usuário">
+                    </label>
+                    <label>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <p>Esqueceu a senha?</p>
+                    <label>
+                        <input type="button" value="Entrar">
+                    </label>
+                    <span style="color: #222222">Não possui uma conta? <p>Registre-se agora!</p></span>
+                </form>
+            </div>
+        </div>
+        --==--==--==--==--==--==--==--==--==--==-->
+
     </header>
 
     <div class="banner">
@@ -86,11 +107,27 @@
         </div>
         <div id="contato">
             <h1>Contato</h1>
-            <div class="textos">
-                <p>Alguns contatos da empresa!</p>
-                <p><i class="fas fa-phone"></i> Telefone: <a>(41) 98426-7913</a></p>
-                <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:contato@stable.com">contato@stable.com</a></p>
-                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/felipemacchiz" target="_blank">StableInc</a></p>
+            <div class="area-contato">
+                <div class="textos">
+                    <p>Alguns contatos da empresa!</p>
+                    <p><i class="fas fa-phone"></i> Telefone: <a>(41) 98426-7913</a></p>
+                    <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:contato@stable.com">contato@stable.com</a></p>
+                    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/felipemacchiz" target="_blank">StableInc</a></p>
+                </div>
+                <div class="outros-contatos">
+                    <h2>Caso queira entrar em contato conosco</h2>
+                    <form>
+                        <label for="nome">Nome completo
+                        <input id="nome" type="text"></label>
+                        <label for="email">E-mail
+                        <input id="email" type="email"></label>
+                        <label for="fone">Telefone
+                        <input id="fone" type="text"></label>
+                        <label for="msg">Mensagem</label>
+                        <textarea id="msg" maxlength="900" placeholder="(Max. 900 caracteres)"></textarea>
+                        <button>Enviar <i class="fas fa-envelope"></i></button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

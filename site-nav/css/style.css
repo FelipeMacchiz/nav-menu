@@ -50,7 +50,6 @@ body {
 }
 .menu-static #login:hover {
     transition: 0.1s;
-    font-size: 27px;
     color: #ffffff;
 }
 .menu-static nav {
@@ -141,7 +140,7 @@ section {
     position: relative;
     padding: 10px;
     margin: 10px 15px;
-    height: max-content;
+    height: 1100px;
     background-color: whitesmoke;
     overflow: auto;
 }
@@ -216,3 +215,124 @@ section h1 {
     transition: 0.4s;
     transform: scale(1.04);
 }
+/* Contatos */
+.area-contato {
+    display: flex;
+}
+.area-contato p {
+    font-size: 16pt;
+    font-weight: lighter;
+}
+.outros-contatos {
+    position: absolute;
+    right: 15px;
+    padding: 10px;
+    background-color: #5981d4;
+    border-radius: 5px;
+    overflow: auto;
+    width: 500px;
+    height: 320px;
+}
+.outros-contatos h2 {
+    font-size: 16pt;
+}
+.outros-contatos label {
+    display: block;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    font-size: 13pt;
+    color: #222222;
+}
+.outros-contatos input, .outros-contatos textarea {
+    position: absolute;
+    right: 0;
+    font-size: 12pt;
+    width: 320px;
+    padding: 4px;
+    background-color: whitesmoke;
+    transition: 0.4s;
+}
+.outros-contatos input:hover, .outros-contatos textarea:hover {
+    background-color: #eeeeee;
+}
+.outros-contatos textarea {
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    right: 20px;
+}
+.outros-contatos button {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    font-size: 12pt;
+    background-color: darkorange;
+    padding: 10px 12px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.outros-contatos button:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: #222222;
+}
+/* Area de Login *//* NÂO FUNCIONA... AINDA */
+/* Login Dropdown */
+/* div .login
+        div .login-content
+            form - label - input [text] [button] p
+
+
+.login {
+    position: absolute;
+    display: none;
+    width: 250px;
+    height: 270px;
+    background-color: #fafafa;
+    top: 59px;
+    right: 10px;
+    z-index: 1;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.login h2 {
+    margin: 7px 11px;
+    color: #222222;
+}
+.login p, span {
+    font-size: 11pt;
+    margin: 4px 11px;
+    color: #164094;
+}
+.login p:hover {
+    color: #1e57c9;
+    cursor: pointer;
+}
+.login input {
+    margin: 7px 11px;
+    padding: 4px;
+    font-size: 12pt;
+    width: 85%;
+    height: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+.login input[type="button"] {
+    width: 88%;
+    height: 38px;
+    font-weight: bolder;
+    background-color: darkorange;
+}
+.login input:hover {
+    background-color: #eeeeee;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+.login input[type="button"]:hover {
+    background-color: orange;
+    cursor: pointer;
+    color: #222222;
+} */
