@@ -145,23 +145,32 @@ section {
     background-color: whitesmoke;
     overflow: auto;
 }
-.textos h1 {
+section h1 {
     font-size: 18pt;
     padding: 3px 3px;
     margin: 5px 0;
     background-color: #1e57c9;
     color: whitesmoke;
 }
+.box-content {
+    display: flex;
+}
 .textos p {
-    margin: 10px 0;
-    line-height: 22px;
-    text-align: justify;
+     margin: 10px 0;
+     line-height: 22px;
+     text-align: justify;
+ }
+.textos a {
+    color: #1e57c9;
+    text-decoration: none;
+    font-weight: bold;
+}
+.textos a:hover {
+    color: #164094;
+    cursor: pointer;
 }
 .imagem {
-    display: block;
-    position: center;
-    margin: 10px auto;
-    width: fit-content;
+    margin: 15px;
 }
 /* Cards */
 .prod {
