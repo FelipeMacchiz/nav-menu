@@ -73,3 +73,36 @@ nav a.active {
     margin: 10px;
     text-align: justify;
 }
+.equipe {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.equipe-cards {
+    display: block;
+    position: relative;
+    width: 900px;
+    height: 350px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 30px 20px;
+    background-color: #2f2f2f;
+}
+.equipe-imagem {
+    height: 100%;
+    width: 300px;
+    background-color: #ff253a;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.equipe-desc {
+    position: absolute;
+    width: auto;
+    top: 20px;
+    left: 320px;
+}
+.equipe-desc p {
+    font-size: 15pt;
+    line-height: 40px;
+}
