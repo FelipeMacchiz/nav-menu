@@ -6,6 +6,38 @@
     <title>Fix!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontes/awesome/css/all.css">
+    <style>
+        .servicos {
+            list-style: none;
+            overflow: hidden;
+            margin: 0 auto;
+            padding: 25px;
+            width: 900px;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        .servicos li {
+            float: left;
+            width: 400px;
+            height: 267px;
+            margin: 20px;
+            border: 5px solid black;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+            transition: 1s;
+            position: relative;
+        }
+        .servicos li span {
+            background-color: rgba(0, 0, 0, 0.6);
+            bottom: 0;
+            padding: 5px;
+            border-top-right-radius: 10px;
+            position: absolute;
+        }
+        .servicos li:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
     <div class="main-head">
