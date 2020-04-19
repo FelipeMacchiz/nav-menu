@@ -58,12 +58,14 @@ nav a.active {
 .user {
     flex: 1;
     justify-content: center;}
+.user i {
+    border-radius: 50%;
+    transition: 0.2s;}
 .user i:hover {
     color: whitesmoke;
     background-color: #333333;
     padding: 1.5vh;
-    cursor: pointer;
-    border-radius: 50%;}
+    cursor: pointer;}
 
 /* SECTION */
 section {
