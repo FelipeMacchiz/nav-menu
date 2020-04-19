@@ -12,6 +12,7 @@
     margin: 25px;
     border: 10px #101010 outset;
     position: relative;
+    transition: 0.6s;
 }
 .service-img span {
     padding: 7px;
@@ -29,6 +30,9 @@
 .booth {
     background: url("../img/booth.jpg") black no-repeat;}
 
+.service-img:hover {
+    transform: scale(1.16);
+}
 
 @media screen and (max-width: 500px) {
     .service-img {
