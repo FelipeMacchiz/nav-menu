@@ -3,71 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fix!</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontes/awesome/css/all.css">
-    <style>
-        .servicos {
-            list-style: none;
-            overflow: hidden;
-            margin: 0 auto;
-            padding: 25px;
-            width: 900px;
-            position: absolute;
-            left: 0;
-            right: 0;
-        }
-        .servicos li {
-            float: left;
-            width: 400px;
-            height: 267px;
-            margin: 20px;
-            border: 5px solid black;
-            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-            transition: 1s;
-            position: relative;
-        }
-        .servicos li span {
-            background-color: rgba(0, 0, 0, 0.6);
-            bottom: 0;
-            padding: 5px;
-            border-top-right-radius: 10px;
-            position: absolute;
-        }
-        .servicos li:hover {
-            transform: scale(1.2);
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Serviços</title>
 </head>
 <body>
-    <div class="main-head">
-        <header>
-            <div class="logo">
-                <i class="fas fa-wrench"></i>
-                <div class="logo-text">
-                    <h2>Fix!</h2>
-                    <span>We fix things</span>
-                </div>
-            </div>
-            <div class="menu">
-                <nav>
-                    <a href="patrocinadores.html">Patrocinadores</a>
-                    <a href="servicos.html" class="active">Serviços</a>
-                    <a href="equipe.html">Equipe</a>
-                    <a href="index.html">Home</a>
-                </nav>
-            </div>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <i class="fas fa-wrench"></i>
+            <h2>Fix!</h4>
+        </div>
+        <div class="nav-button">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="servicos.html" class="active">Serviços</a></li>
+                <li><a href="patrocinadores.html">Patrocinadores</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
 
-    <div class="main">
-        <h1>Serviços</h1>
-        <ul class="servicos">
-            <li style="background: url('imagens/placa.jpg')"><span>Consertamos placas</span></li>
-            <li style="background: url('imagens/chip.jpg') no-repeat black"><span>Chips</span></li>
-            <li style="background: url('imagens/camera.jpg')"><span>Qualquer aparelho eletrônico</span></li>
-            <li style="background: url('imagens/booth.jpg')"><span>E diversos</span></li>
-        </ul>
-    </div>
+    <section>
+        <article>
+            <h1>Serviços</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus nisi ut praesentium earum in, esse sed corporis laboriosam quae recusandae repellendus similique fuga libero doloremque distinctio porro consequatur itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magnam odit, doloribus atque aspernatur ex pariatur nemo? A quae officia impedit sequi debitis reiciendis ad esse delectus architecto? Similique, non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores provident veniam, assumenda incidunt accusamus aliquid laboriosam similique repellendus dicta voluptatum, nulla est perferendis ipsum cupiditate distinctio nisi, odio beatae?</p>
+        </article>
+    </section>
 </body>
 </html>
