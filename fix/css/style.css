@@ -122,6 +122,9 @@ footer i {
         flex-direction: column;}    
     .content .hand {
         order: 2;}
+    .content .team {
+        width: 60vw;
+        height: 30vw;}
     .content .text {
         order: 1;}
 }
