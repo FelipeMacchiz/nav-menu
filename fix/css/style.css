@@ -140,4 +140,9 @@ footer i {
         flex: 1;}
     .user {
         flex: 1;}
+
+    .content .team {
+        width: 80vw;
+        height: 40vw;
+    }
 }
