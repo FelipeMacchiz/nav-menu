@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.team {
+    flex-direction: column;
+}
+
+.team-card {
+    display: flex;
+    width: 80%;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #333333;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+}
+
+.card-image {
+    width: 300px;
+    height: 350px;
+    flex-shrink: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;}
+.pablo {
+    background: url("../img/pablo.jpg");}
+.julia {
+    background: url("../img/julia.jpg");}
+.sabrina {
+    background: url("../img/sabrina.jpg");}
+.carlos {
+    background: url("../img/carlos.jpg");}
+
+.card-desc {
+    margin: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .team-card {
+        flex-direction: column;
+    }
+    .card-image {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 30px;
+        background-position: center;
+        background-size: 100% 70vw;
+        width: 100%;
+        height: 70vw;
+    }
+}
