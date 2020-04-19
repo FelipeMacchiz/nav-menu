@@ -1,2 +1,39 @@
 @charset "utf-8";
 
+.service {
+    width: 100%;
+    justify-content: center;
+}
+
+.service-img {
+    width: 400px;
+    height: 266px;
+    flex-shrink: 0;
+    margin: 25px;
+    border: 10px #101010 outset;
+    position: relative;
+}
+.service-img span {
+    padding: 7px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top-right-radius: 10px;
+    position: absolute;}
+
+.placa {
+    background: url("../img/placa.jpg") black no-repeat;}
+.chip {
+    background: url("../img/chip.jpg") black no-repeat}
+.camera {
+    background: url("../img/camera.jpg") black no-repeat;}
+.booth {
+    background: url("../img/booth.jpg") black no-repeat;}
+
+
+@media screen and (max-width: 500px) {
+    .service-img {
+        width: 90%;
+        height: 60vw;
+        background-size: 100% 60vw;
+    }
+}
