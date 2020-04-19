@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.sponsor {
+    flex-direction: column;}
+
+.sponsor-card a {
+    color: #cccccc;
+    text-decoration: none;}
+
+.sponsor-card {
+    display: flex;
+    width: 70%;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #333333;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.4);}
+
+.sponsor-logo, .sponsor-inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 300px;}
+
+.sponsor-logo {
+    transition: 0.4s;
+    color: #111111;
+    font-size: 50px;
+    background-color: whitesmoke;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;}
+.sponsor-logo:hover {
+    background-color: #aaaaaa;
+    color: #333333;}
+
+.sponsor-inf {
+    width: 100%;
+    margin: 0 20px;
+    transition: 0.4s;}
+.sponsor-inf a:hover {
+    color: whitesmoke;}
