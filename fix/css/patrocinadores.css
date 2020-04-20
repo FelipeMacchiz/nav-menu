@@ -43,3 +43,16 @@
     transition: 0.4s;}
 .sponsor-inf a:hover {
     color: whitesmoke;}
+
+@media screen and (max-width: 850px) {
+    .sponsor-logo {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .sponsor-card {
+        width: 80%;
+        height: 325px;
+        margin: 10px;
+    }
+}
