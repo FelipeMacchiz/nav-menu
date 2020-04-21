@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        nav {
+            width: 100%;
+            height: 40px;
+            background: lightblue;
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            padding: 8px 6px;
+            font-size: 16px;
+            margin: auto 4px;
+            text-decoration: none;
+            background-color: lightcyan;
+        }
+        .drop {
+            display: inline-block;
+            position: relative;
+        }
+        .drop-content {
+            display: none;
+            position: absolute;
+            top: 26px;
+            z-index: 1;
+        }
+        .drop-content a {
+            display: block;
+            background-color: lightskyblue;
+            border-top: 1px black solid;
+        }
+        .drop:hover .drop-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <div class="drop">
+            <a href="#">Item 4</a>
+            <div class="drop-content">
+                <a>Item 5</a>
+                <a>Item 6</a>
+                <a>Item 7</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

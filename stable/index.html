@@ -8,128 +8,121 @@
     <link rel="stylesheet" href="fontes/awesome/css/all.css">
 </head>
 <body>
-    <header  class="menu-static">
-        <span class="icon" id="logo"><i class="fas fa-anchor"></i> Stable Inc.</span>
+    <header>
+        <div class="logo">
+            <i class="fas fa-anchor"></i>
+            <h2>Stable Inc.</h2>
+        </div>
         <nav>
-            <ul>
-                <li><a class="menu-itens" href="#nossa-empresa">Nossa empresa</a></li>
-                <li><a class="menu-itens" href="#produtos">Produtos</a></li>
-                <li><a class="menu-itens" href="#contato">Contato</a></li>
-            </ul>
+            <a href="#empresa">Empresa</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
             <div class="drop-menu">
-                <span class="menu-itens" id="drop-button"><i class="fas fa-angle-down"></i> Parceiros</span>
+                <a class="drop-button">Parceiros <i class="fas fa-caret-down"></i></a>
                 <div class="drop-content">
-                    <a href="../fix/index.html"><i class="fas fa-wrench"></i> Fix!</a>
-                    <a href="#"><i class="fas fa-microchip"></i> Vertware</a>
+                    <a href="../fix/index.html"><i class="fas fa-wrench"></i>Fix!</a>
+                    <a href="../vertware/index.html"><i class="fas fa-microchip"></i>Vertware</a>
                 </div>
             </div>
         </nav>
-        <span class="icon" id="login"><i class="fas fa-user"></i></span>
-
-        <!-- Area de login --><!-- NÃO FUNCIONA... AINDA --
-        <div class="login">
-            <div class="login-content">
-                <h2>Login</h2>
-                <form>
-                    <label>
-                        <input type="text" placeholder="Usuário">
-                    </label>
-                    <label>
-                        <input type="password" placeholder="Senha">
-                    </label>
-                    <p>Esqueceu a senha?</p>
-                    <label>
-                        <input type="button" value="Entrar">
-                    </label>
-                    <span style="color: #222222">Não possui uma conta? <p>Registre-se agora!</p></span>
-                </form>
+        <div class="hidden-menu">
+            <i class="fas fa-ellipsis-v"></i>
+            <div class="hidden-content">
+                <a class="none">Menu <i class="fas fa-bars"></i></a>
+                <a class="link" href="#empresa">Empresa</a>
+                <a class="link" href="#produtos">Produtos</a>
+                <a class="link" href="#contato">Contato</a>
+                <a class="parceiros">Parceiros <i class="fas fa-caret-square-down"></i></a>
+                <a class="link" href="../fix/index.html">Fix!</a>
+                <a class="link" href="../vertware/index.html">Vertware</a>
             </div>
         </div>
-        --==--==--==--==--==--==--==--==--==--==-->
-
     </header>
-
     <div class="banner">
-            <div class="title">
-                <h1 style="font-size: 20pt">Stable Inc.</h1>
-                <p style="font-size: 16pt">A sua empresa de tecnologia</p>
-            </div>
+        <div class="title">
+            <h1>Stable Inc.</h1>
+            <p>A sua empresa de tecnologia</p>
+        </div>
     </div>
-
     <section>
-        <div id="nossa-empresa">
+        <article id="empresa">
             <h1>Nossa empresa</h1>
-            <div class="box-content">
+            <div class="content text">
+                <div class="text">
+                    <p>Lumens trabem, tanquam emeritis burgus. Emptiness is not holographic in upstairs, the material world, or heavens, but everywhere. Instead of enameling divided rice vinegar with cauliflower, use eleven and a half teaspoons orange juice and one package cinnamon soup pot. Pestilence, fortune, and treasure. All the disconnections will be lost in energies like coordinates in assimilations</p>
+                    <p>Sunt lunaes imperium bi-color, dexter gloses. Over there is not the imminent heaven of the lama. Season each side of the cabbage with one cup of lettuce. How rainy. You scrape like a lubber. Make it so.</p>
+                    <p>Nunquam contactus lamia. All magical egos yearn each other, only private gurus have a uniqueness. All children like toasted escargots in crême fraîche and flower. Where is the coal-black hornpipe? Fly without anomaly, and we won’t imitate an alien.</p>
+                </div>
                 <div class="imagem">
                     <img src="imagens/empresa.jpg" alt="empresa">
                 </div>
-                <div class="textos">
-                    <p style="text-indent: 40px">Impositios mori in flavum burdigala! Nutrixs sunt turpiss de flavum vortex. Attraction is not hermetic in zion, the heavens of history, or upstairs, but everywhere. The great unknown is full of bliss. Season a handfull pounds of lobster in nine tablespoons of rice vinegar. Instead of enameling dark cream with caviar, use one jar oyster sauce and eight peaces woodruff plastic bag. Remember: squeezeed leek tastes best when boiled in a casserole varnished with black pepper. Aww, courage! The sailor breaks with courage, rob the lighthouse until it dies.</p>
-                    <p style="text-indent: 40px">Species go from devastations like brave pathways. Pattern, assimilation, and beauty. Harvest without adventure, and we won’t disrupt a particle. Impositios mori in flavum burdigala! Nutrixs sunt turpiss de flavum vortex. Attraction is not hermetic in zion, the heavens of history, or upstairs, but everywhere. The great unknown is full of bliss. Season a handfull pounds of lobster in nine tablespoons of rice vinegar. Instead of enameling dark cream with caviar, use one jar oyster sauce and eight peaces woodruff plastic bag. Remember: squeezeed leek tastes best when boiled in a casserole varnished with black pepper. Aww, courage! The sailor breaks with courage, rob the lighthouse until it dies. Species go from devastations like brave pathways. Pattern, assimilation, and beauty. Harvest without adventure, and we won’t disrupt a particle.</p>
-                </div>
-        </div>
-        </div>
-        <div id="produtos">
-            <h1>Produtos</h1>
-            <div class="textos">
-                <p style="text-indent: 0">Conheça os produtos mais inovadores do mercado com a tecnologia que só a Stable pode oferecer!</p>
             </div>
-            <div class="prod">
+        </article>
+        <article id="produtos">
+            <h1>Produtos</h1>
+            <p>Conheça os produtos mais inovadores do mercado</p>
+            <div class="content cards">
                 <div class="card">
-                    <div class="card-image" style="background: url('imagens/computador.jpg')"></div>
+                    <div class="card-image computador"></div>
                     <div class="card-desc">
                         <h2>R$ 1.999,99</h2>
                         <h3>Computador</h3>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-image" style="background: url('imagens/celular.jpg')"></div>
+                    <div class="card-image celular"></div>
                     <div class="card-desc">
                         <h2>R$ 899,99</h2>
                         <h3>Celular</h3>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-image"  style="background: url('imagens/monitor.jpg')"></div>
+                    <div class="card-image monitor"></div>
                     <div class="card-desc">
                         <h2>R$ 759,99</h2>
                         <h3>Monitor</h3>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-image"  style="background: url('imagens/watch.jpg')"></div>
+                    <div class="card-image watch"></div>
                     <div class="card-desc">
                         <h2>R$ 1.289,99</h2>
                         <h3>Smart Watch</h3>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="contato">
-            <h1>Contato</h1>
-            <div class="area-contato">
-                <div class="textos">
-                    <p>Alguns contatos da empresa!</p>
-                    <p><i class="fas fa-phone"></i> Telefone: <a>(41) 98426-7913</a></p>
-                    <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:contato@stable.com">contato@stable.com</a></p>
-                    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/felipemacchiz" target="_blank">StableInc</a></p>
+        </article>
+        <article id="contato">
+            <h1>Contatos</h1>
+            <div class="contato">
+                <div class="content text contatos">
+                    <h3>Aqui vão alguns contatos da empresa</h3>
+                    <span><i class="fas fa-phone"></i> Telefone: <a>(41) 97531-8426</a></span>
+                    <span><i class="fas fa-envelope"></i> Email: <a href="mailto:contato@stable.com">contato@stable.com</a></span>
+                    <span><i class="fab fa-github"></i> Github: <a href="https://github.com/felipemacchiz">StableInc</a></span>
                 </div>
-                <div class="outros-contatos">
-                    <h2>Caso queira entrar em contato conosco</h2>
+                <div class="content contatos input">
+                    <h3>Se quiser mandar uma mensagem, mande aqui!</h3>
                     <form>
-                        <label for="nome">Nome completo
-                        <input id="nome" type="text" placeholder="Digite seu nome"></label>
-                        <label for="email">E-mail
-                        <input id="email" type="email" placeholder="Digite seu e-mail"></label>
-                        <label for="fone">Telefone
-                        <input id="fone" type="text" placeholder="Digite seu telefone"></label>
-                        <label for="msg">Mensagem</label>
-                        <textarea id="msg" maxlength="500" placeholder="(Max. 500 caracteres)"></textarea>
+                        <label>
+                            <input class="medium" type="text" placeholder="Nome">
+                        </label>
+                        <label>
+                            <input class="medium" type="text" placeholder="Sobrenome">
+                        </label><br>
+                        <label>
+                            <input class="large" type="email" placeholder="E-mail">
+                        </label><br>
+                        <label>
+                            <input class="large" type="text" placeholder="Telefone">
+                        </label><br>
+                        <label>
+                        <textarea class="large" maxlength="500" placeholder="Digite aqui a sua mensagem (Max.500 caracteres)"></textarea></label>
                         <button>Enviar <i class="fas fa-envelope"></i></button>
                     </form>
                 </div>
             </div>
-        </div>
+        </article>
     </section>
 </body>
 </html>

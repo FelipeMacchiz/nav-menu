@@ -1,127 +1,123 @@
 @charset "UTF-8";
 
 * {
-    border: 0;
     margin: 0;
+    padding: 0;
     outline: 0;
 }
+
 body {
-    border: 0;
-    margin: 0;
-    width: 100%;
-    min-width: 900px;
-    height: 100%;
-    font-family: sans-serif;
-    background-color: #eeeeee;
+    font-family: "Manrope", sans-serif;
+    background-color: whitesmoke;
 }
-/* Menu estático do site 1 */
-.menu-static {
-    display: inline-flex;
-    position: relative;
 
-    width: 100%;
-    min-height: 60px;
-    max-height: min-content;
-
-    padding: 0;
-    margin-bottom: 0;
-
+/* Barra */
+header {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    border-bottom: 1px #3d8ed4 solid;
+    height: 50px;
+}
 
-    background-color: #1e57c9;
-}
-.menu-static .icon {
-    font-size: 25px;
-    color: whitesmoke;
-    font-weight: bold;
-    display: block;
-    position: absolute;
-    margin: 0;
-    border: 0;
-}
-.menu-static #logo {
-    position: absolute;
-    left: 30px;
-    margin: auto;
-}
-.menu-static #login {
-    right: 30px;
-    cursor: pointer;
-}
-.menu-static #login:hover {
-    transition: 0.1s;
-    color: #ffffff;
-}
-.menu-static nav {
-    display: inline-flex;
-    position: absolute;
-    width: fit-content;
-    right: 85px;
-}
-.menu-static ul {
-    padding: 0;
-    border: 0;
-    margin: 0;
-    list-style: none;
-}
-.menu-static li {
-    display: inline-block;
+.logo, .nav {
+    display: flex;
     align-items: center;
-    width: fit-content;
-    height: 60px;
-    margin: 0 -3px;
 }
-.menu-static .menu-itens {
-    display: block;
-    padding: 20px;
-    text-align: center;
-    width: fit-content;
 
-    color: whitesmoke;
-    text-transform: uppercase;
+.logo {
+    color: #226fb3;
+}
+.logo i {
+    font-size: 24px;
+    margin: 5px;
+}
+
+nav a, .drop-menu a {
+    margin: 4px 8px;
+    font-size: 20px;
     text-decoration: none;
-    font-weight: bolder;
+    color: #226fb3;
 }
-.menu-static .menu-itens:hover {
-    transform: scale(1.03);
-    transition: 0.1s;
-    background-color: #164094;
+nav a:hover {
+    background-image: linear-gradient(to top, #e6f3ff, whitesmoke);
+    padding-bottom: 9px;
+    border-bottom: 3px #1e57c9 solid;
 }
-/* Menu Dropdown */
 .drop-menu {
-        position: relative;
-        display: inline-block;
-    }
-#drop-button {
-        cursor: pointer;
-    }
+    display: inline;
+}
 .drop-content {
     display: none;
     position: absolute;
-    top: 59px;
-    left: -2px;
-    width: 201px;
+    width: 160px;
+    top: 45px;
+    left: 76%;
     background-color: #eeeeee;
     z-index: 1;
 }
 .drop-content a {
     display: block;
-    color: #222222;
-    padding: 12px 16px;
-    text-decoration: none;
+    text-align: center;
+    padding-bottom: 0;
+    margin: 6px;
+    height: 30px;
 }
-.drop-menu:hover .drop-content {
-    display: block;
+.drop-content i {
+    margin-right: 8px;
 }
 .drop-content a:hover {
-    background-color: #aaaaaa;
+    padding-bottom: 0;
+    border: none;
+    background-image: linear-gradient(to top, #eeeeee, #eeeeee);
+    color: #3d8ed4;
 }
-.drop-menu:hover #drop-button {
-    transform: scale(1.03);
-    transition: 0.1s;
+.drop-menu:hover .drop-content {
+    display: inline-block;
+}
+
+.hidden-menu {
+    display: none;
+    font-size: 26px;
+    color: #226fb3;
+}
+.hidden-content {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: max-content;
+    top: 0;
+    left: 0;
+    background-color: #cccccc;
+    z-index: 1;
+}
+.hidden-content a {
+    display: block;
+    text-align: center;
+    padding: 6px;
+    margin: 0;
+    height: 30px;
+    text-decoration: none;
+    color: #222222;
+    border-bottom: 1px #222222 solid;
+}
+.hidden-content .link:hover {
+    background-color: #333333;
+    color: whitesmoke;
+}
+.hidden-content .none {
     background-color: #164094;
+    color: whitesmoke;
 }
-/* Banner */
+.hidden-content .parceiros {
+    background-color: #222255;
+    color: whitesmoke;
+}
+.hidden-menu:hover .hidden-content {
+    display: inline-block;
+}
+
+/* Conteudo */
 .banner {
     position: relative;
     background: url("../imagens/banner.jpg");
@@ -135,60 +131,49 @@ body {
     bottom: 0;
     right: 10px;
 }
-/* Section */
+
 section {
-    position: relative;
-    padding: 10px;
-    margin: 10px 15px;
-    height: max-content;
-    background-color: whitesmoke;
-    overflow: auto;
-}
-section h1 {
-    font-size: 18pt;
-    padding: 3px 3px;
-    margin: 5px 0;
-    background-color: #1e57c9;
-    color: whitesmoke;
-}
-.box-content {
-    display: flex;
-}
-.textos p {
-     margin: 10px 0;
-     line-height: 22px;
-     text-align: justify;
- }
-.textos a {
-    color: #1e57c9;
-    text-decoration: none;
-    font-weight: bold;
-}
-.textos a:hover {
-    color: #164094;
-    cursor: pointer;
-}
-.imagem {
     margin: 15px;
 }
-/* Cards */
-.prod {
-    display: block;
+article {
+    margin: 10px;
+}
+article h1 {
+    background-color: #1e57c9;
+    padding: 6px;
+    margin: 10px auto;
+    color: whitesmoke;
+}
+.content {
+    display: flex;
+    align-items: center;
+}
+.text {
+    margin: 10px;
+}
+.text p {
+    text-indent: 40px;
+    line-height: 26px;
+}
+
+.cards {
+    display: flex;
     position: center;
     width: fit-content;
     margin: 15px auto;
 }
 .card {
+    flex-shrink: 0;
     display: inline-block;
     position: relative;
     width: 200px;
     height: 210px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    margin: 0 15px;
+    margin: 20px 15px;
     background-color: #eeeeee;
 }
-.card .card-image {
+.card-image {
     position: absolute;
     width: 100%;
     height: 133px;
@@ -196,17 +181,17 @@ section h1 {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
-.card .card-desc {
+.card-desc {
     position: absolute;
     top: 145px;
     left: 20px;
     width: 100%;
 }
-.card .card-desc h2 {
+.card-desc h2 {
     font-size: 15pt;
     font-weight: bold;
 }
-.card .card-desc h3 {
+.card-desc h3 {
     font-size: 13pt;
     font-weight: lighter;
 }
@@ -215,129 +200,114 @@ section h1 {
     transition: 0.4s;
     transform: scale(1.04);
 }
-/* Contatos */
-#contato {
-    height: 400px;
-    overflow: auto;
-    display: block;
+.computador {
+    background: url("../imagens/computador.jpg");
 }
-.area-contato {
+.celular {
+    background: url("../imagens/celular.jpg");
+}
+.monitor {
+    background: url("../imagens/monitor.jpg");
+}
+.watch {
+    background: url("../imagens/watch.jpg");
+}
+
+.contato {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.area-contato p {
-    font-size: 16pt;
-    font-weight: lighter;
+.contatos {
+    flex-direction: column;
+    align-items: flex-start;
 }
-.outros-contatos {
-    position: absolute;
-    right: 15px;
-    padding: 10px;
-    background-color: #5981d4;
-    border-radius: 5px;
-    overflow: auto;
-    width: 500px;
-    height: 320px;
-}
-.outros-contatos h2 {
-    font-size: 16pt;
-}
-.outros-contatos label {
+.contatos span {
     display: block;
-    position: relative;
-    margin: 10px;
-    padding: 0;
-    font-size: 13pt;
-    color: #222222;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 5px;
 }
-.outros-contatos input, .outros-contatos textarea {
-    position: absolute;
-    right: 0;
-    font-size: 12pt;
-    width: 320px;
-    padding: 4px;
-    background-color: whitesmoke;
-    transition: 0.4s;
-}
-.outros-contatos input:hover, .outros-contatos textarea:hover {
-    background-color: #eeeeee;
-}
-.outros-contatos textarea {
-    display: block;
-    position: absolute;
-    width: 91%;
-    height: 100px;
-    right: 20px;
-}
-.outros-contatos button {
-    position: absolute;
-    bottom: 12px;
-    right: 20px;
-    font-size: 12pt;
-    background-color: darkorange;
-    padding: 10px 12px;
-    transition: 0.4s;
-    border-radius: 5px;
-}
-.outros-contatos button:hover {
-    cursor: pointer;
-    background-color: orange;
-    color: #222222;
-}
-/* Area de Login *//* NÂO FUNCIONA... AINDA */
-/* Login Dropdown */
-/* div .login
-        div .login-content
-            form - label - input [text] [button] p
-
-
-.login {
-    position: absolute;
-    display: none;
-    width: 250px;
-    height: 270px;
-    background-color: #fafafa;
-    top: 59px;
-    right: 10px;
-    z-index: 1;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-.login h2 {
-    margin: 7px 11px;
-    color: #222222;
-}
-.login p, span {
-    font-size: 11pt;
-    margin: 4px 11px;
-    color: #164094;
-}
-.login p:hover {
+.contatos a {
+    text-decoration: none;
     color: #1e57c9;
+}
+.contatos a:hover {
     cursor: pointer;
+    color: #3d8ed4;
 }
-.login input {
-    margin: 7px 11px;
-    padding: 4px;
-    font-size: 12pt;
-    width: 85%;
-    height: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.4s;
+
+.input {
+    display: flex;
+    background-color: lightskyblue;
+    padding: 10px;
 }
-.login input[type="button"] {
-    width: 88%;
-    height: 38px;
-    font-weight: bolder;
-    background-color: darkorange;
+.input input, textarea, button {
+    font-size: 18px;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+    border: none;
 }
-.login input:hover {
-    background-color: #eeeeee;
-    transition: 0.4s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-}
-.login input[type="button"]:hover {
-    background-color: orange;
-    cursor: pointer;
+textarea {
     color: #222222;
-} */
+    height: 160px;
+    font-family: "Manrope", sans-serif;
+}
+.input .large {
+    width: 96%;
+}
+.input button {
+    background-color: orange;
+    float: right;
+}
+.input button:hover {
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .cards {
+        justify-content: center;
+        width: 100%;
+    }
+    .card {
+        transform: scale(0.8);
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .content {
+        flex-direction: column;
+    }
+    .cards {
+        display: block;
+        margin-left: 3vw;
+    }
+    .card {
+        transform: scale(1);
+    }
+    .contato {
+        flex-direction: column;
+    }
+    .input {
+        align-items: center;
+    }
+}
+@media screen and (max-width: 568px) {
+    nav {
+        display: none;
+    }
+    .hidden-menu {
+        display: block;
+    }
+}
+@media screen and (max-width: 499px) {
+    .banner, .imagem {
+        display: none;
+    }
+    .input .large {
+        width: 92%;
+    }
+}
