@@ -22,12 +22,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 180px;
     color: #eeeeee;
+    position: fixed;
 }
 .side-bar i {
     font-size: 26px;
@@ -49,7 +49,9 @@ nav {
     border-bottom: 1px #222222 solid;
 }
 nav a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 5px 8px;
     font-family: 'Baloo Paaji 2', cursive;
     font-size: 20px;
@@ -58,7 +60,7 @@ nav a {
     border-top: 1px #222222 solid;
 }
 nav a:hover {
-    background-image: linear-gradient(to right, #333333, #555555);
+    background-image: linear-gradient(to right, #333333, rgba(255, 129, 33, 0.6));
 }
 
 .config {
@@ -74,8 +76,9 @@ nav a:hover {
 /* Main-content */
 .main-content {
     margin: 10px 10px 10px 190px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: minmax(200px, auto);
 }
 
 .content-box {
@@ -85,6 +88,40 @@ nav a:hover {
     padding: 18px;
     margin: 12px;
 }
-.content-box p {
-    max-width: 30vw;
+
+.content-image {
+    grid-column: 1 / -1;
+    height: 400px;
+}
+.dell {
+    background: url("../img/personal-comp.jpg");
+    background-size: 100% auto;
+}
+
+@media screen and (max-width: 800px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    .content-image {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .side-bar {
+        width: 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-text {
+        display: none;
+    }
+    nav a {
+        padding: 14px 3px;
+    }
+    .main-content {
+        margin: 10px 10px 10px 70px;
+    }
+    .content-image {
+        height: 200px;
+    }
 }
