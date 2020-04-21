@@ -192,13 +192,13 @@ nav a:hover {
 }
 .content-project {
     background-image: url("../img/project.jpg");
-    background-size: 100% auto;
+    background-size: auto 100%;
     color: whitesmoke;
 }
 
 .partners {
     background-image: url("../img/partners.jpg");
-    background-size: 100% 100%;
+    background-size: auto 100%;
 }
 .partners-logo {
     display: flex;
