@@ -116,7 +116,7 @@ nav a:hover {
         display: none;
     }
     nav a {
-        padding: 14px 3px;
+        padding: 14px;
     }
     .main-content {
         margin: 10px 10px 10px 70px;
