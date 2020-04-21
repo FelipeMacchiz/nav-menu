@@ -84,11 +84,15 @@ nav a:hover {
 .hidden-content {
     display: none;
     position: fixed;
-    width: 100%;
+    width: 90%;
     height: max-content;
     top: 0;
     left: 0;
+    right: 0;
+    margin: auto;
     background-color: #cccccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     z-index: 1;
 }
 .hidden-content a {
@@ -99,7 +103,7 @@ nav a:hover {
     height: 30px;
     text-decoration: none;
     color: #222222;
-    border-bottom: 1px #222222 solid;
+    border-top: 1px #222222 solid;
 }
 .hidden-content .link:hover {
     background-color: #333333;
