@@ -23,9 +23,45 @@ header {
 .logo, nav ul, .user {
     display: flex;}
     /* "Botão do menu" */
-.nav-button {
+
+.hidden-menu {
     display: none;
-    justify-content: center;}
+    justify-content: center;
+}
+.hidden-content {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    background-color: #444444;
+}
+.hidden-content a {
+    display: inline-block;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: center;
+    padding: 25px;
+}
+
+.hidden-content .menu {
+    background-color: #101010;
+}
+.hidden-content .hidden-active {
+    background-color: #2cc76c;
+    color: #101010;
+}
+.hidden-menu:hover .hidden-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
     /* Logo */
 .logo {
     flex: 1;
@@ -133,7 +169,7 @@ footer i {
 @media screen and (max-width: 700px) {
     nav {
         display: none;}
-    .nav-button {
+    .hidden-menu {
         display: flex;
         flex: 1;}
     .user {
