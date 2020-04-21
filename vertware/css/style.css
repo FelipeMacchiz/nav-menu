@@ -237,7 +237,7 @@ nav a:hover {
 }
 @media screen and (max-width: 600px) {
     .side-bar {
-        width: 60px;
+        width: 61px;
         align-items: center;
         justify-content: space-between;
     }
