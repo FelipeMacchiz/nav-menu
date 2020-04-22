@@ -83,13 +83,13 @@ nav a:hover {
 }
 .hidden-content {
     display: none;
-    position: fixed;
-    width: 90%;
+    position: absolute;
+    width: 102%;
     height: max-content;
-    top: 0;
-    left: 0;
+    top: 50px;
+    left: 0;/*
     right: 0;
-    margin: auto;
+    margin: auto;*/
     background-color: #cccccc;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -98,7 +98,7 @@ nav a:hover {
 .hidden-content a {
     display: block;
     text-align: center;
-    padding: 6px;
+    padding: 15px;
     margin: 0;
     height: 30px;
     text-decoration: none;
@@ -116,6 +116,9 @@ nav a:hover {
 .hidden-content .parceiros {
     background-color: #222255;
     color: whitesmoke;
+}
+.part {
+    background-color: #b3bcc7;
 }
 .hidden-menu:hover .hidden-content {
     display: inline-block;
