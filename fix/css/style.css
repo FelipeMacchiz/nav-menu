@@ -26,7 +26,6 @@ header {
     background-color: aliceblue;}
 .logo, nav ul, .user {
     display: flex;}
-    /* "Botão do menu" */
 
 .hidden-menu {
     display: none;
@@ -64,7 +63,6 @@ header {
     flex-direction: column;
     align-items: center;
 }
-
 
     /* Logo */
 .logo {
