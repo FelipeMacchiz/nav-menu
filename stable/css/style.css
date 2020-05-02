@@ -166,8 +166,10 @@ article h1 {
 
 .cards {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: center;
-    width: fit-content;
+    width: 100%;
     margin: 15px auto;
 }
 .card {
@@ -278,23 +280,17 @@ textarea {
 @media screen and (max-width: 1000px) {
     .cards {
         justify-content: center;
-        width: 100%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .card {
-        transform: scale(0.8);
-        margin: 10px;
+        margin: 12px auto;
     }
 }
 @media screen and (max-width: 850px) {
     .content {
         flex-direction: column;
-    }
-    .cards {
-        display: block;
-        margin-left: 3vw;
-    }
-    .card {
-        transform: scale(1);
     }
     .contato {
         flex-direction: column;
@@ -310,6 +306,11 @@ textarea {
     .hidden-menu {
         display: block;
     }
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 @media screen and (max-width: 499px) {
     section {
